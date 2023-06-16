@@ -1,0 +1,184 @@
+@keyframes effects {
+    from {opacity: 0;}
+    to {opacity: 2;}
+}
+@keyframes static { 
+    from {opacity: 1;}
+    to {opacity: 1;}
+}
+@keyframes width {
+    from {width: 100px; }
+}
+
+@media (max-width: 800px) {
+    .section-2, .section-5, .section-6 {
+        height: 100vh;
+    }
+}
+@media (min-width: 800px) {
+    .section-2{
+        height: 80vh;
+    }
+    .section-5 {
+        height: 50vh;
+    }
+    .section-6 {
+        height: 50vh;
+    }
+}
+body {
+    background-color: #161616;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+    }
+
+body::-webkit-scrollbar-track {
+    background: #333333;        /* color of the tracking area */
+    }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00E88F;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    }
+.navbar-toggler {
+        padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+        font-size: var(--bs-navbar-toggler-font-size);
+        line-height: 1;
+        color: white;
+        background-color: transparent;
+        border: var(--bs-border-width) solid #2191FB;
+        border-radius: var(--bs-navbar-toggler-border-radius);
+        transition: var(--bs-navbar-toggler-transition);
+}
+    
+.navbar {
+    background: transparent;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.navbar-brand {
+    color: #E9E4DC;
+}
+.nav-link {
+    color: #E9E4DC;
+}
+.section-1 {
+    font-family: 'Flipahaus';
+    background-color: #131B23;
+  
+}
+.nome {
+    color: #FFFFFF;
+    font-size: 50px;
+    animation: effects 1s ease forwards;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.links {
+    font-size: 30px;
+    animation: effects 1s ease forwards;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.status {
+    color: #FFFFFF;
+    opacity: 0;
+    animation: effects 2s ease forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.btn-outline-primary {
+    color: #2191FB;
+    border:1px solid #2191FB;
+    animation: effects 2s ease forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.btn-outline-primary:hover {
+    background-color: #7A9CC6;
+    border: #084C61;
+    color: white;
+}
+.img-logo {
+    animation: effects 2s ease forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+
+
+.section-2 {
+    background-color: #14191E;
+   color: white;
+}
+
+.title-2 {
+    font-size: 40px;
+    text-align: center;
+}
+.section-3 {
+    background-color: #131B23;
+    color: white;
+}
+.html, .css, .js, .bts, .php, .laravel, .jquery, .mysql, .git {
+    font-size: 50px;
+    opacity: 0;
+    color: white;
+}
+.section-4 {
+    background-color: #14191E;
+    color: white;
+}
+.section-5 {
+    background-color: #131B23;
+    color: white;
+}
+@keyframes over {
+    from {opacity: 1;}
+    to {
+        opacity: 0.5;
+    }
+}
+.img-projeto-1 {
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 300px;
+    background-size: 600px;
+}
+.img-projeto-1:hover {
+    animation: over 0.5s ease forwards;
+    animation-duration: 0.5s;
+}
+.img-projeto-2 {
+    width: 1600px;
+    height: 300px;
+    background-size: 600px;
+}
+.img-projeto-2:hover {
+    animation: over 0.5s ease forwards;
+    animation-duration: 0.5s;
+}
+footer {
+    background-color: #082536;
+    height: 30vh;
+}
+.section-6 {
+    background-color: #14191E;
+}   
+#input {
+    background-color:#084C61;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+}
